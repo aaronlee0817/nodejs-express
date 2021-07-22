@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 // 监听端口：容器需要针对一个端口监听 HTTP 请求，从而让小程序的请求访问到容器内部
-const port = process.env.PORT || 80; // 此处要与新建版本时的端口号相同
+const port = process.env.PORT || 8081; // 此处要与新建版本时的端口号相同
 app.listen(port, () => {
   console.log("Hello world listening on port", port);
 });
